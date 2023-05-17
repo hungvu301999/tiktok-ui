@@ -3,19 +3,33 @@
 
 :root {
   --primary: #fe2c55;
-  --background-default :rgb(255, 255, 255);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
   text-rendering: optimizespeed;
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a[href] {
+  color: #333;
+  text-decoration: none;
 }
