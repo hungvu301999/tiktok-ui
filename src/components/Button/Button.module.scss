@@ -12,10 +12,9 @@
   + .wrapper {
     margin-left: 8px;
   }
-  &.disabled{
+  &.disabled {
     pointer-events: none;
     opacity: 0.5;
-    
   }
 }
 
@@ -54,4 +53,11 @@
   &:hover {
     background-color: rgba(22, 24, 35, 0.03);
   }
+}
+
+.icon {
+  display: inline-block;
+  width: 24px;
+  margin-right: 8px;
+  text-align: center;
 }

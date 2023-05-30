@@ -1,0 +1,26 @@
+// Menu
+.menu-list {
+  font-family: ProximaNova, Arial, Tahoma, PingFangSC, sans-serif;
+  font-weight: 600;
+  padding: 8px 0px;
+  width: 223px;
+  margin: 0;
+  .menu-item {
+    margin: 0px;
+  }
+}
+
+.menu-popper {
+  padding-bottom: 8px;
+}
+
+.menu-item {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 8px 10px 16px;
+  text-align: start;
+  border-radius: 0;
+  &:hover {
+    background: rgba(22, 24, 35, 0.03);
+  }
+}

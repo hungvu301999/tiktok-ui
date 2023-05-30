@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCircleXmark,
   faEllipsisVertical,
+  faLanguage,
   faMagnifyingGlass,
   faPlus,
   faSpinner,
@@ -16,8 +17,31 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
+import Menu from '~/components/Popper/Menu';
+import { faKeyboard, faMoon, faQuestionCircle } from '@fortawesome/free-regular-svg-icons';
 
 const cx = classNames.bind(styles);
+
+const MENU_ITEMS = [
+  {
+    icon: <FontAwesomeIcon icon={faLanguage} />,
+    title: 'English',
+  },
+  {
+    icon: <FontAwesomeIcon icon={faQuestionCircle} />,
+    title: 'Feedback and help',
+    to: '/feedback',
+  },
+  {
+    icon: <FontAwesomeIcon icon={faKeyboard} />,
+    title: 'Keyboard shortcuts',
+  },
+  {
+    icon: <FontAwesomeIcon icon={faMoon} />,
+    title: 'Dark mode',
+  },
+];
+
 function Header() {
   const [visible, setVisible] = useState(false);
   const show = () => setVisible(true);
@@ -72,7 +96,11 @@ function Header() {
             Upload
           </Button>
           <Button primary={+true}>Log in</Button>
-          <FontAwesomeIcon className={cx('list-icon')} icon={faEllipsisVertical} />
+          <Menu items={MENU_ITEMS}>
+            <button className={cx('more-btn')}>
+              <FontAwesomeIcon icon={faEllipsisVertical} />
+            </button>
+          </Menu>
         </div>
       </div>
     </header>
