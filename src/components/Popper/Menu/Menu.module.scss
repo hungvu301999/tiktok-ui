@@ -17,10 +17,33 @@
 .menu-item {
   display: inline-block;
   width: 100%;
-  padding: 10px 8px 10px 16px;
+  padding: 11px 8px 11px 16px;
   text-align: start;
   border-radius: 0;
+  line-height: 1.8rem;
   &:hover {
     background: rgba(22, 24, 35, 0.03);
   }
+}
+
+//Header
+.header {
+  margin-top: -8px;
+  position: relative;
+  height: 50px;
+}
+
+.back-btn {
+  float: left;
+  width: 48px;
+  height: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header-title {
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
