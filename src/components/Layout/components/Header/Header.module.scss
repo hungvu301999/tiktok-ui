@@ -132,3 +132,39 @@
   padding: 0px 4px;
   color: rgb(22, 24, 35);
 }
+
+.inbox-btn {
+  margin-left: 16px;
+  position: relative;
+  padding: 3px 3px 0;
+}
+.messages-btn {
+  margin-left: 16px;
+  height: 32px;
+  padding: 3px 3px 0;
+  position: relative;
+}
+
+.messages {
+  cursor: pointer;
+  width: 2.6rem;
+  height: 2.6rem;
+}
+.inbox {
+  cursor: pointer;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.user-avt {
+  position: relative;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  background: center no-repeat;
+  -webkit-background-size: cover;
+  margin-left: 2.4rem;
+}
